@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6e8, #ffeaf4);
+  text-align: center;
+  overflow-x: hidden;
+  transition: 1s;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4da6;
+  margin-top: 50px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  margin: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.yesBtn {
+  background: #ff66b2;
+  color: white;
+}
+
+.noBtn {
+  background: #ff99cc;
+  color: white;
+  position: absolute;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  display: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.fade-bg {
+  background: linear-gradient(135deg, #ffb6d9, #ffcce6);
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #999;
+}
